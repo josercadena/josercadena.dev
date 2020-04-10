@@ -1,6 +1,6 @@
 body {
   font-family: 'Space Mono', monospace;
-  color: #202020;
+  color: #f0f0f0;
   position: relative;
   background: transparent;
 }
@@ -8,14 +8,14 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #dddddd url("../img/bg.jpg") top right no-repeat;
+  background: #000000 url("../img/bg.jpg") top center no-repeat;
+  filter: brightness(20%); 
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
-
-background: linear-gradient(353deg, rgba(189,247,233,1) 0%, rgba(249,245,229,1) 50%);
+  
 }
 
 @media (min-width: 1024px) {
@@ -70,14 +70,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   margin-top: 30px;
-  color: rgba(20, 20, 20, 0.8);
+  color: rgba(238, 238, 238, 0.8);
 }
 
 #header h2 span {
-  color: #202020;
+  color: #EEEEEE;
   border-bottom: 2px solid #1de9b6;
   padding-bottom: 6px;
 }
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links {
-  margin-top: 40px;
+  margin-top: 2em;
   display: flex;
 }
 
@@ -97,18 +97,21 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(20, 20, 20, 0);
-  color: #202020;
+  background: rgba(230, 230, 230, 0.1);
+  color: #EEEEEE;
   line-height: 1;
   margin-right: 15px;
   border-radius: 10%;
-  border: 1px solid rgba(20, 20, 20);; 
+  border: 1px solid rgba(230, 230, 230);; 
   width: 40px;
   height: 40px;
 }
 
 #header .social-links a:hover {
+  color: #202020;
   background: #1de9b6;
+  border: none;
+
 }
 
 @media (max-width: 992px) {
