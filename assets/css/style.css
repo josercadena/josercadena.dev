@@ -1,6 +1,6 @@
 body {
-  font-family: 'Space Mono', monospace;
-  color: #f0f0f0;
+  font-family: 'Roboto Mono', monospace;
+  color: #222222;
   position: relative;
   background: transparent;
 }
@@ -8,7 +8,8 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #000000 url("../img/bg5.jpg") top center no-repeat;
+  background: #eeeeee url("../img/bg.png") top center no-repeat;
+
   /* filter: brightness(20%);  */
   background-size: cover;
   left: 0;
@@ -34,7 +35,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 /*--------------------------------------------------------------
@@ -55,12 +56,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h1 {
-  font-size: 60px;
+  font-size: 48px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 #header h1 a, #header h1 a:hover {
@@ -70,14 +71,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h2 {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 500;
   margin-top: 30px;
-  color: rgba(238, 238, 238, 0.8);
+  color: rgba(20, 20, 20);
 }
 
 #header h2 span {
   color: #EEEEEE;
+  background-color: #202020;
   border-bottom: 2px solid #1de9b6;
   padding-bottom: 6px;
 }
@@ -98,11 +100,11 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   background: rgba(230, 230, 230, 0.1);
-  color: #EEEEEE;
+  color: #212121;
   line-height: 1;
   margin-right: 15px;
-  border-radius: 10%;
-  border: 1px solid rgba(230, 230, 230);; 
+  /* border-radius: 10%; */
+  border: 2px solid rgb(20, 20, 20, 0.8);
   width: 40px;
   height: 40px;
 }
@@ -110,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .social-links a:hover {
   color: #202020;
   background: #1de9b6;
-  border: none;
+  /* border: 1px solid rgb(21, 21, 21); */
 
 }
 

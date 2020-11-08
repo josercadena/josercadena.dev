@@ -28,6 +28,7 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,16 +46,19 @@
 <body>
   <header id="header" class="header-tops">
     <div class="container d-flex flex-column justify-content-between">
-      <div id="main"></div>
-      <h2>Hi there, Jose here.</h2>
-      <h2>I'm a passionate coffee drinker and <span>software developer</span>.</h2>
-      <h2>Let's stay in touch: </h2>
-
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/josercadena/" class="linkedin"><i class="ri-linkedin-fill"></i></a>
-        <a href="https://github.com/josercadena" class="github"><i class="ri-github-fill"></i></a>
-        <a href="https://twitter.com/josercadena" class="twitter"><i class="ri-twitter-fill"></i></a>
+    <div class="d-flex flex-row">
+      <div class="p-2">
+        <h1>Hallo, Jose here 👋 </h1>
+        <h2>I'm a passionate coffee drinker and software developer</h2>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/josercadena/" class="linkedin"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://github.com/josercadena" class="github"><i class="ri-github-fill"></i></a>
+          <a href="https://twitter.com/josercadena" class="twitter"><i class="ri-twitter-fill"></i></a>
       </div>
+      </div>
+    </div>
+
+      
 
     </div>
   </header><!-- End Header -->
@@ -68,9 +72,9 @@
 
     container = document.getElementById("main");
     const text = new Blotter.Text("josercadena", {
-      family: "'Space Mono', monospace",
+      family: "'Roboto Mono', monospace",
       size: 70,
-      fill: "#EEEEEE"
+      fill: "#202020"
     });
     let material = new Blotter.RollingDistortMaterial();
 
